@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const RightMenu: React.FC = () => {
     return (
@@ -7,7 +7,7 @@ const RightMenu: React.FC = () => {
             <p>Right menu goes here</p>
             {/* <SocialIcons /> */}
         </div>
-    );
-};
+    )
+}
 
-export default RightMenu;
+export default RightMenu

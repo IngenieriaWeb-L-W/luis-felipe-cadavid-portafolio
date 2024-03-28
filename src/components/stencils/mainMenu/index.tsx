@@ -1,11 +1,8 @@
-
-import React from 'react';
-
+import React from 'react'
 
 const MainMenu: React.FC = () => {
     return (
         <div>
-
             <div>
                 <h1>Central Content</h1>
                 <p>Central content goes here</p>
@@ -20,10 +17,8 @@ const MainMenu: React.FC = () => {
 
                 {/* <ExperienceSection /> */}
             </div>
-
         </div>
+    )
+}
 
-    );
-};
-
-export default MainMenu;
+export default MainMenu
