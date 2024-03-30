@@ -1,23 +1,22 @@
-import React from 'react';
-import { ImageProps, ShapeImage } from '@/components/atoms/shapeImage'
+import React from 'react'
+
 import Badge from '@components/atoms/badge'
+import { DataHandler } from '@components/atoms/dataHandler'
+import { ImageProps, ShapeImage } from '@components/atoms/shapeImage'
 import { CardTitle, SubTitle } from '@components/atoms/text'
-import { DataHandler } from '@/components/atoms/dataHandler';
 
 interface subData {
-    [key: string]: string | number | boolean;
+    [key: string]: string | number | boolean
 }
 
 interface cardProps {
-    icon?: string;
-    image?: ImageProps;
-    title?: string;
-    text?: string;
-    data?: Record<string, string | number | boolean | subData>;
-    textFormat?: string;
+    icon?: string
+    image?: ImageProps
+    title?: string
+    text?: string
+    data?: Record<string, string | number | boolean | subData>
+    textFormat?: string
 }
-
-
 
 export function SectionCard({
     icon,
@@ -43,15 +42,15 @@ export function SectionCard({
                     />
                 </div>
             )}
-            <div className=' mb-1 items-center flex-col '>
+            <div className=' mb-1 flex-col items-center '>
                 {title !== undefined && (
-                    <div >
+                    <div>
                         <SubTitle title={title} />
                     </div>
                 )}
                 {text !== undefined && (
-                    <div > 
-                        <CardTitle title = {text} />
+                    <div>
+                        <CardTitle title={text} />
                     </div>
                 )}
             </div>
@@ -60,5 +59,5 @@ export function SectionCard({
                 <DataHandler data={data} textFormat={textFormat || ''} />
             )}
         </div>
-    );
+    )
 }

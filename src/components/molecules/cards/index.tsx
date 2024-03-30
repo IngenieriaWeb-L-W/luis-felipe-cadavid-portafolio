@@ -11,7 +11,7 @@ export function Card({
     text: string
 }) {
     return (
-        <div className='max-w-96 flex flex-col justify-center items-center p-2 sm:items-start sm:max-w-64'>
+        <div className='flex max-w-96 flex-col items-center justify-center p-2 sm:max-w-64 sm:items-start'>
             <div className='my-5'>
                 <Badge icon={icon} />
             </div>

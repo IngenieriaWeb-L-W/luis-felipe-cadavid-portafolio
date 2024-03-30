@@ -5,9 +5,9 @@ interface BadgeProps {
 
 export default function Badge({ icon, classExtra }: BadgeProps) {
     return (
-        <div className='h-[72px] w-[72px] rounded-full color-gradient flex justify-center items-center shadow-lg'>
+        <div className='flex size-[72px] items-center justify-center rounded-full shadow-lg'>
             <i
-                className={`text-white justify-center items-center flex h-10 w-10 ${classExtra}`}
+                className={`flex size-10 items-center justify-center text-white ${classExtra}`}
             >
                 <svg
                     xmlns='http://www.w3.org/2000/svg'
