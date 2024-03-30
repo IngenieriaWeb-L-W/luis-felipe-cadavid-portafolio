@@ -5,13 +5,13 @@ import RightMenu from '@components/stencils/rightMenu'
 export default function Home() {
     return (
         <div className='flex'>
-            <div className='w-1/4 h-screen fixed left-0 top-0 overflow-y-auto'>
+            <div className='fixed left-0 top-0 h-screen w-1/4 overflow-y-auto'>
                 <LeftMenu />
             </div>
-            <div className='w-3/4 ml-64'>
+            <div className='ml-64 w-3/4'>
                 <MainMenu />
             </div>
-            <div className='w-1/4 h-screen fixed right-0 top-0 overflow-y-auto'>
+            <div className='fixed right-0 top-0 h-screen w-1/4 overflow-y-auto'>
                 <RightMenu />
             </div>
         </div>

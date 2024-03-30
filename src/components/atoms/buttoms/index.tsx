@@ -7,7 +7,7 @@ export function Buttom({
 }) {
     return (
         <button
-            className='color-gradient w-[163px] h-11 rounded-full text-white font-bold shadow '
+            className='h-11 w-[163px] rounded-full font-bold text-white shadow '
             type='button'
             onClick={handleClick}
         >
@@ -19,7 +19,7 @@ export function Buttom({
 export function Menu({ handleClick }: { handleClick: () => void }) {
     return (
         <button
-            className='w-7 h-7 text-black'
+            className='size-7 text-black'
             type='button'
             onClick={handleClick}
         >
@@ -41,7 +41,7 @@ export function Menu({ handleClick }: { handleClick: () => void }) {
 export function MenuX({ handleClick }: { handleClick: () => void }) {
     return (
         <button
-            className='w-7 h-7 text-black'
+            className='size-7 text-black'
             type='button'
             onClick={handleClick}
         >
