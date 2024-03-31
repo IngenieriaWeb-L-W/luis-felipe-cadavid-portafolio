@@ -14,7 +14,7 @@ export function EducationCard({
     onClick,
 }: EducationCardProps): JSX.Element {
     return (
-        <div className = 'justify-center' onClick={onClick}> {/* Agregar onClick aquí */}
+        <div className = 'justify-center' onClick={onClick}> 
             <Badge {...icon} />
             <CardTitle title= {title} />
         </div>

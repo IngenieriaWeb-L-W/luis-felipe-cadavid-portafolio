@@ -3,12 +3,12 @@ import Badge from '@components/atoms/badge';
 import { CardTitle, Paragraph } from '@components/atoms/text';
 import { Buttom } from '@/components/atoms/buttoms';
 
-interface EducationModalProps {
+interface CardModalProps {
     data: any;
     onClose: () =>void;
 }
 
-const EducationModal: React.FC<EducationModalProps> = ({ data, onClose}) => {
+const CardModal: React.FC<CardModalProps> = ({ data, onClose}) => {
     const { icon, title, text, description } = data;
 
     return (
@@ -23,4 +23,4 @@ const EducationModal: React.FC<EducationModalProps> = ({ data, onClose}) => {
     );
 };
 
-export default EducationModal;
+export default CardModal;

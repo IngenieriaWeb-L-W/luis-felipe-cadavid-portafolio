@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import { EducationCard } from '@/components/molecules/educationCard';
-import { Title } from '@/components/atoms/text';
-import { educationData, educationData1 } from '@/components/atoms/dataEducation';
-import Modal from '@/components/atoms/modal';
-import EducationModal from '@/components/molecules/educationModal';
+import { EducationCard } from '@components/molecules/educationCard';
+import { Title } from '@components/atoms/text';
+import { educationData, educationData1 } from '@components/atoms/dataEducation';
+import Modal from '@components/atoms/modal';
+import CardModal from '@/components/molecules/cardModal';
 
 export function Education(): JSX.Element {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -25,12 +25,12 @@ export function Education(): JSX.Element {
                         key={index}
                         icon={item.icon}
                         title={item.title}
-                        onClick={() => handleToggleModal(item.id)} // Agregar onClick handler
+                        onClick={() => handleToggleModal(item.id)} 
                     />
                 ))}
             </div>
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-                {selectedEducation && (<EducationModal data={selectedEducation} onClose={() => setIsModalOpen(false)} /> 
+                {selectedEducation && (<CardModal data={selectedEducation} onClose={() => setIsModalOpen(false)} /> 
             )}
             </Modal>
         </div>

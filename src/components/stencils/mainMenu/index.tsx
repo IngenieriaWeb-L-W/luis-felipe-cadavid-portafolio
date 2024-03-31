@@ -12,12 +12,12 @@ const MainMenu: React.FC = () => {
             </div>
             <div className='flex flex-col'>
                 <div>
+                    <Experience />
+                </div>
+                <div>
                     <Education />
                 </div>
 
-                <div>
-                    <Experience />
-                </div>
 
             </div>
         </div>

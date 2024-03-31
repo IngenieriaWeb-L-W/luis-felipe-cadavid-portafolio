@@ -24,7 +24,7 @@ export function InfoMain(): JSX.Element {
                             <SubTitle title=' Developer' classNameExtra='text-primary text-3xl font-extrabold' />
                         </div>
                     </div>
-                    <div className=' w-[620px] py-4 text-white'>
+                    <div className=' w-[520px] py-4 text-white'>
                         <Paragraph
                             text="I present myself as a professional in education and technology, with an innate dedication to the world of programming, who is currently completing his training as a Systems Engineer. I consider I have a solid technical base in programming, artificial intelligence, data science and infrastructure, as well as outstanding teamwork skills.
                             My professional background to date has been enriched by valuable experiences, starting with web development, passing through Data science and artificial intelligence and culminating in the implementation of cloud solutions. My active participation in the Co-creation Laboratory of the General Hospital of Medellín has given me the opportunity to apply my skills in projects with a direct impact on the health sector. In addition, he helped with technical support on various projects for the prestigious company Siesa.
