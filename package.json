@@ -13,7 +13,9 @@
     "start": "next start",
     "lint": "next lint",
     "preinstall": "npx npm-only-allow@latest --PM yarn",
-    "postinstall": "npx patch-package -y"
+    "postinstall": "npx patch-package -y",
+    "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.eslintrc.js' --image graph.svg"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
