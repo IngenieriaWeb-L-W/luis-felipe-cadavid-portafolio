@@ -11,9 +11,15 @@ export function Extraskills(): JSX.Element {
             <SectionCard
                 data={{
                     'Web Development': {
-                        Django: '90%',
-                        'React.JS': '85%',
-                        Angular: '70%',
+                        'Django': '90%',
+                        'Spring Boot': '80%',
+                        'Flask': '70%',
+                        'FastAPI': '70%',
+                        'NodeJS': '70%',
+                        'Nest.JS': '70%',
+                        'Next.JS': '80%',
+                        'React.JS': '80%',
+                        'Angular': '60%',
                     },
                     'Mobile Development': {
                         'React Native': '85%',

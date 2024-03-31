@@ -1,23 +1,44 @@
-interface BadgeProps {
-    icon: string
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Paragraph } from '@components/atoms/text';
+
+export interface BadgeProps {
+    icon?: any
+    path?: string
+    sizeSVG?: string | number
+    sizeImg?: string | number
+    link?: string
+    description?: string
     classExtra?: string
 }
 
-export default function Badge({ icon, classExtra }: BadgeProps) {
+export default function Badge({ icon, path, sizeSVG, sizeImg, link, description, classExtra }: BadgeProps) {
     return (
-        <div className='flex size-[72px] items-center justify-center rounded-full shadow-lg'>
-            <i
-                className={`flex size-10 items-center justify-center text-white ${classExtra}`}
-            >
-                <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='40px'
-                    height='40px'
-                    viewBox='0 0 24 24'
-                >
-                    <path width='40px' height='40px' fill='white' d={icon} />
-                </svg>
-            </i>
-        </div>
+            <div className={`flex flex-col items-center py-3 ${classExtra}`} >
+                <a href={link} target="_blank" rel="noreferrer">
+                    <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width={sizeSVG}
+                        height={sizeSVG}
+                        viewBox='0 0 20 20'
+                    >
+                        <FontAwesomeIcon icon={icon} />
+                        <image 
+                            href={path} 
+                            width={sizeImg} 
+                            height={sizeImg}
+
+                        />
+                    </svg>
+
+                </a>
+
+
+                <Paragraph 
+                    text={description || ''}
+                    classNameExtra='text-white font-light text-xs '
+                />
+            </div>
+
+
     )
 }

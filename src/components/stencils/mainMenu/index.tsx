@@ -1,21 +1,24 @@
+import { Experience } from '@components/organisms/experience'
+import { Education } from '@components/organisms/education'
+import { InfoMain } from '@components/organisms/infoMain'
 import React from 'react'
 
 const MainMenu: React.FC = () => {
     return (
         <div>
             <div>
-                <h1>Central Content</h1>
-                <p>Central content goes here</p>
-                {/* <ProfileSection />
-                <KnowledgeSection />
-                <EducationSection />
-                <PortfolioSection /> */}
-            </div>
-            <div>
-                <h1>Central Content</h1>
-                <p>Central content goes here</p>
+                <InfoMain />
 
-                {/* <ExperienceSection /> */}
+            </div>
+            <div className='flex flex-col'>
+                <div>
+                    <Experience />
+                </div>
+                <div>
+                    <Education />
+                </div>
+
+
             </div>
         </div>
     )
