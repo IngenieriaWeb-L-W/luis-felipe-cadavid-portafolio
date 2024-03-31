@@ -1,26 +1,26 @@
-import React from 'react';
-import Badge from '@components/atoms/badge';
-import { CardTitle, Paragraph } from '@components/atoms/text';
-import { Buttom } from '@/components/atoms/buttoms';
+import React from 'react'
+
+import { Buttom } from '@/components/atoms/buttoms'
+import Badge from '@components/atoms/badge'
+import { CardTitle, Paragraph } from '@components/atoms/text'
 
 interface CardModalProps {
-    data: any;
-    onClose: () =>void;
+    data: any
+    onClose: () => void
 }
 
-const CardModal: React.FC<CardModalProps> = ({ data, onClose}) => {
-    const { icon, title, text, description } = data;
+const CardModal: React.FC<CardModalProps> = ({ data, onClose }) => {
+    const { icon, title, text, description } = data
 
     return (
-        <div className='p-4 bg-slate-950 flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center bg-slate-950 p-4'>
             <Badge {...icon} />
-            <CardTitle title={title}  />
-            <Paragraph text={text}   />
+            <CardTitle title={title} />
+            <Paragraph text={text} />
             <Paragraph text={description} classNameExtra='w-[300px]' />
-            <Buttom text="Close" handleClick={onClose} />
-            
+            <Buttom text='Close' handleClick={onClose} />
         </div>
-    );
-};
+    )
+}
 
-export default CardModal;
+export default CardModal

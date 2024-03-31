@@ -8,7 +8,7 @@ import { ProgrammingLanguages } from '@components/organisms/programmingLenguage'
 
 const LeftMenu: React.FC = () => {
     return (
-        <div>
+        <div className='flex max-h-screen max-w-sm flex-col'>
             <div className='py-4'>
                 <Profile />
             </div>
@@ -25,7 +25,6 @@ const LeftMenu: React.FC = () => {
             <div className='py-4'>
                 <Languages />
             </div>
-
         </div>
     )
 }
