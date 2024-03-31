@@ -1,9 +1,9 @@
 name: CI/CD
 on: [push]
 env:
-  VERCEL_TOKEN_RESERVAS: "${{ secrets.VERCEL_TOKEN_RESERVAS }}"
-  VERCEL_ORG_ID_RESERVAS: "${{ secrets.VERCEL_ORG_ID_RESERVAS }}"
-  VERCEL_PROJECT_ID_RESERVAS: "${{ secrets.VERCEL_PROJECT_ID_RESERVAS }}"
+  VERCEL_TOKEN_RESERVAS: "${{ secrets.VERCEL_TOKEN_DEV }}"
+  VERCEL_ORG_ID_RESERVAS: "${{ secrets.VERCEL_ORG_ID_DEV }}"
+  VERCEL_PROJECT_ID_RESERVAS: "${{ secrets.VERCEL_PROJECT_ID_DEV }}"
 jobs:
     build:
       runs-on: ubuntu-latest
