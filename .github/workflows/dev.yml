@@ -16,7 +16,7 @@ jobs:
           with:
             node-version: "${{ env.node_version }}"
         - name: Install dependencies
-          run: yarn install
+          run: yarn install --force
         - name: Build
           run: yarn build
     Deploy-Dev:

@@ -10,7 +10,6 @@
   "plugins": [
     "tailwindcss",
     "@typescript-eslint",
-    "import-order-autofix",
     "import",
     "prettier"
   ],
