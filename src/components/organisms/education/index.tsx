@@ -17,7 +17,7 @@ export function Education(): JSX.Element {
     };
 
     return (
-        <div className='border border-slate-100  flex-col items-center justify-center w-[85%] mb-12 mx-2 p-3'>
+        <div className='border border-slate-100  flex-col items-center justify-center w-[940px] mb-12 mx-2 p-3'>
             <Title title='Education' classNameExtra='font-mono my-4' />
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 items-center'>
                 {educationData1.map((item, index) => (
