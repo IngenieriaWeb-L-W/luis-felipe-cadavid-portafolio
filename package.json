@@ -4,10 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "lint:fix": "next lint --fix",
+    "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "analyze": "cross-env ANALYZE=true yarn build",
     "format": "prettier --write \"src/**/*.{tsx,json,css,scss,md}\"",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preinstall": "npx npm-only-allow@latest --PM yarn",
+    "postinstall": "npx patch-package -y"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
