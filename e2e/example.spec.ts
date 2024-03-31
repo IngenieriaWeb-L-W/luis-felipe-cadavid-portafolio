@@ -3,5 +3,5 @@ import { expect, test } from '@playwright/test'
 test('has title', async ({ page }) => {
     await page.goto('./')
 
-    await expect(page).toHaveTitle(/Next.js Luis Felipe Cadavid Portafolio/)
+    await expect(page).toHaveTitle(/Luis Felipe Cadavid Portafolio/)
 })
