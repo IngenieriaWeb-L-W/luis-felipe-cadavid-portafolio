@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
+
 import { Paragraph, SubTitle, Title } from '@/components/atoms/text'
 import { SectionCard } from '@components/molecules/sectionCard'
 
 export function InfoMain(): JSX.Element {
     const size = '70%'
     return (
-        <div className='flex-row justify-center  max-h-screen px-2 mr-4'>
+        <div className='mr-8 max-h-screen  flex-row justify-center'>
             <div className='flex items-center'>
-
                 <SectionCard
                     image={{
                         path: '/PhotoProfile2.jpg',
@@ -15,16 +15,25 @@ export function InfoMain(): JSX.Element {
                         shape: 'rounded',
                     }}
                 />
-                
+
                 <div>
-                    <div className='border-8 rounded-lg border-indigo-500 p-6 '>
-                        <Title title="I'm Luis Felipe Cadavid" classNameExtra='text-primary text-4xl' />
+                    <div className='rounded-lg border-8 border-indigo-500 p-6 '>
+                        <Title
+                            title="I'm Luis Felipe Cadavid"
+                            classNameExtra='text-primary text-4xl'
+                        />
                         <div className='flex justify-center'>
-                            <SubTitle title='Full Stack ' classNameExtra='text-primary text-3xl mx-2 text-yellow-400 font-extrabold' />
-                            <SubTitle title=' Developer' classNameExtra='text-primary text-3xl font-extrabold' />
+                            <SubTitle
+                                title='Full Stack '
+                                classNameExtra='text-primary text-3xl mx-2 text-yellow-400 font-extrabold'
+                            />
+                            <SubTitle
+                                title=' Developer'
+                                classNameExtra='text-primary text-3xl font-extrabold'
+                            />
                         </div>
                     </div>
-                    <div className=' w-[520px] py-4 text-white'>
+                    <div className=' w-[650px] py-4 text-white'>
                         <Paragraph
                             text="I present myself as a professional in education and technology, with an innate dedication to the world of programming, who is currently completing his training as a Systems Engineer. I consider I have a solid technical base in programming, artificial intelligence, data science and infrastructure, as well as outstanding teamwork skills.
                             My professional background to date has been enriched by valuable experiences, starting with web development, passing through Data science and artificial intelligence and culminating in the implementation of cloud solutions. My active participation in the Co-creation Laboratory of the General Hospital of Medellín has given me the opportunity to apply my skills in projects with a direct impact on the health sector. In addition, he helped with technical support on various projects for the prestigious company Siesa.
@@ -32,10 +41,8 @@ export function InfoMain(): JSX.Element {
                             Likewise, my Master's degree in E-learning and Social Networks gives me the ability to analyze, use and absorb knowledge about existing technology, enabling me to implement innovative methodologies, strategies and models of teaching, learning and social participation in formal environments. as informal."
                         />
                     </div>
-
                 </div>
             </div>
-
         </div>
     )
 }

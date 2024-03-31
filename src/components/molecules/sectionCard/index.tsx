@@ -30,7 +30,7 @@ export function SectionCard({
         <div className='flex flex-col '>
             {icon !== undefined && (
                 <div className='my-5 text-center'>
-                    <Badge 
+                    <Badge
                         icon={icon}
                         path={icon?.path}
                         link={icon?.link}

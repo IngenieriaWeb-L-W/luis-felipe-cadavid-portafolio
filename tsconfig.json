@@ -15,7 +15,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2021",
+    "target": "es5",
     "sourceMap": true,
     "incremental": true,
     "plugins": [

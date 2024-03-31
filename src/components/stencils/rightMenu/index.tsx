@@ -1,9 +1,10 @@
-import SocialMedia from '@components/organisms/socialMedia'
 import React from 'react'
+
+import SocialMedia from '@components/organisms/socialMedia'
 
 const RightMenu: React.FC = () => {
     return (
-        <div className='items-center'>
+        <div className='items-center justify-center'>
             <SocialMedia />
         </div>
     )
