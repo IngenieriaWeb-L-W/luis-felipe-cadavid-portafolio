@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Badge from '@components/atoms/badge'
+import Badge, { BadgeProps } from '@components/atoms/badge'
 import { DataHandler } from '@components/atoms/dataHandler'
 import { ImageProps, ShapeImage } from '@components/atoms/shapeImage'
 import { CardTitle, SubTitle } from '@components/atoms/text'
@@ -10,7 +10,7 @@ interface subData {
 }
 
 interface cardProps {
-    icon?: string
+    icon?: BadgeProps
     image?: ImageProps
     title?: string
     text?: string
@@ -27,10 +27,15 @@ export function SectionCard({
     textFormat,
 }: cardProps) {
     return (
-        <div className='flex flex-col px-2 '>
+        <div className='flex flex-col '>
             {icon !== undefined && (
                 <div className='my-5 text-center'>
-                    <Badge icon={icon} />
+                    <Badge 
+                        icon={icon}
+                        path={icon?.path}
+                        link={icon?.link}
+                        description={icon?.description}
+                    />
                 </div>
             )}
             {image !== undefined && (
@@ -42,7 +47,7 @@ export function SectionCard({
                     />
                 </div>
             )}
-            <div className=' mb-1 flex-col items-center '>
+            <div className=' flex-col items-center '>
                 {title !== undefined && (
                     <div>
                         <SubTitle title={title} />
