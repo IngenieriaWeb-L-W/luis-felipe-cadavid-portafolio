@@ -16,6 +16,10 @@
     }
 }
 
+.color-gradient {
+    @apply bg-gradient-to-br from-[#33D35E] to-[#2AB6D9];
+}
+
 body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(
