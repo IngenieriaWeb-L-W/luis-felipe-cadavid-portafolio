@@ -7,7 +7,7 @@ export function Buttom({
 }) {
     return (
         <button
-            className='color-gradient h-11 w-[163px] rounded-full font-bold text-white shadow mt-6'
+            className='color-gradient mt-6 h-11 w-[163px] rounded-full font-bold text-white shadow'
             type='button'
             onClick={handleClick}
         >
