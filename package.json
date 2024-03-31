@@ -15,7 +15,6 @@
     "e2e:headless": "playwright test",
     "e2e:ui": "playwright test --ui",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "preinstall": "npx npm-only-allow@latest --PM yarn",
     "postinstall": "npx patch-package -y",
     "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.eslintrc.js' --image graph.svg"
 
@@ -89,6 +88,11 @@
     "tailwindcss": "^3.4.1",
     "ts-jest": "^29.1.1",
     "tsc": "^2.0.4",
-    "typescript": "5.3.2"
-  }
+    "typescript": "5.3.2",
+    "webpack": "5.89.0"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "packageManager": "yarn@1.22.19"
 }
