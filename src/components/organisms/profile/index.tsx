@@ -1,7 +1,7 @@
 import { SectionCard } from '@components/molecules/sectionCard'
 
 export function Profile(): JSX.Element {
-    const size = '60%'
+    const size = '40%'
     return (
         <div className='px-4 '>
             <SectionCard
