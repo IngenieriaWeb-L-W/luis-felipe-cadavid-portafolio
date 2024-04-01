@@ -4,14 +4,14 @@ import RightMenu from '@components/stencils/rightMenu'
 
 export default function Home() {
     return (
-        <div className='flex max-h-screen'>
-            <div className='w-1/4'>
+        <div className='flex flex-wrap'>
+            <div className='w-full lg:w-1/4'>
                 <LeftMenu />
             </div>
-            <div className='flex grow justify-center py-4'>
+            <div className='w-full lg:w-2/3'>
                 <MainMenu />
             </div>
-            <div className='w-1/12'>
+            <div className=' w-screen lg:w-1/12'>
                 <RightMenu />
             </div>
         </div>

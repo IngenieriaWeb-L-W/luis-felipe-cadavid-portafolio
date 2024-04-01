@@ -6,15 +6,15 @@ import { InfoMain } from '@components/organisms/infoMain'
 
 const MainMenu: React.FC = () => {
     return (
-        <div className='flex flex-col items-center'>
+        <div className='py-4 lg:py-2'>
             <div>
                 <InfoMain />
             </div>
-            <div className='flex flex-col'>
-                <div>
+            <div className='py-4 lg:py-2'>
+                <div className='py-4 lg:py-2'>
                     <Experience />
                 </div>
-                <div>
+                <div className='py-4 lg:py-2'>
                     <Education />
                 </div>
             </div>
