@@ -21,7 +21,7 @@ export function Experience(): JSX.Element {
     }
 
     return (
-        <div className='py-4 lg:py-4 rounded-lg border-8 border-indigo-500 p-6 '>
+        <div className='rounded-lg border-8 border-indigo-500 p-6 py-4 lg:py-4 '>
             <Title title='Experience' classNameExtra='font-mono my-4' />
             <ExperienceCarousel
                 data={dataExperince1}

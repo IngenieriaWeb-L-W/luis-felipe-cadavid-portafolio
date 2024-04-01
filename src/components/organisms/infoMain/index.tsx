@@ -7,7 +7,7 @@ export function InfoMain(): JSX.Element {
     const size = '40%'
     return (
         <div className='mr-8 py-4 lg:py-4'>
-            <div className='flex felx-row lg:py-3 justify-center items-center rounded-lg border-8 border-indigo-500 p-6 '>
+            <div className='row-auto flex items-center justify-center rounded-lg border-8 border-indigo-500 p-6 lg:py-3 '>
                 <div className='py-4 lg:py-0'>
                     <SectionCard
                         image={{
@@ -33,9 +33,8 @@ export function InfoMain(): JSX.Element {
                         />
                     </div>
                 </div>
-                
             </div>
-            <div className='py-4 lg:py-4 px-4 text-white'>
+            <div className='p-4 text-white lg:py-4'>
                 <Paragraph
                     text="I present myself as a professional in education and technology, with an innate dedication to the world of programming, who is currently completing his training as a Systems Engineer. I consider I have a solid technical base in programming, artificial intelligence, data science and infrastructure, as well as outstanding teamwork skills.
                     My professional background to date has been enriched by valuable experiences, starting with web development, passing through Data science and artificial intelligence and culminating in the implementation of cloud solutions. My active participation in the Co-creation Laboratory of the General Hospital of Medellín has given me the opportunity to apply my skills in projects with a direct impact on the health sector. In addition, he helped with technical support on various projects for the prestigious company Siesa.
@@ -43,7 +42,6 @@ export function InfoMain(): JSX.Element {
                     Likewise, my Master's degree in E-learning and Social Networks gives me the ability to analyze, use and absorb knowledge about existing technology, enabling me to implement innovative methodologies, strategies and models of teaching, learning and social participation in formal environments. as informal."
                 />
             </div>
-
         </div>
     )
 }
