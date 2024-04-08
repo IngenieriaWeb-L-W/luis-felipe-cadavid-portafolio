@@ -6,7 +6,10 @@ import { InfoMain } from '@components/organisms/infoMain'
 
 const MainMenu: React.FC = () => {
     return (
-        <div className='py-4 lg:py-2 ' style={{ maxHeight: '100vh', overflowY:'auto' }}>
+        <div
+            className='py-4 lg:py-2 '
+            style={{ maxHeight: '100vh', overflowY: 'auto' }}
+        >
             <div>
                 <InfoMain />
             </div>
