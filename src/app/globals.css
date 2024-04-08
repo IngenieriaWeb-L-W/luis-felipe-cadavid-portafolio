@@ -16,9 +16,50 @@
     }
 }
 
-.color-gradient {
-    @apply bg-gradient-to-br from-[#33D35E] to-[#2AB6D9];
+.color-gradient1 {
+    @apply bg-gradient-to-bl from-[#33D35E] to-[#2AB6D9];
 }
+
+.color-gradient-status-1 {
+    @apply bg-gradient-to-t from-[#091f0e] to-[#33D35E];
+}
+
+.color-gradient-status-3 {
+    @apply bg-gradient-to-t from-[#1f0e0e] to-[#D93333];
+}
+
+.color-gradient-status-2 {
+    @apply bg-gradient-to-t from-[#1f1e0e] to-[#D9D233];
+}
+
+
+
+@keyframes progressAnimation {
+    0% {
+        transform: translateX(-5%);
+    }
+    20% {
+        transform: translateX(25%);
+    }
+    40% {
+        transform: translateX(-5%);
+    }
+    60% {
+        transform: translateX(25%);
+    }
+    80% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.bar-progress {
+    animation: progressAnimation 2s ease-in-out forwards;
+    width: 0; /* Inicialmente la barra estará vacía */
+  }
+
 
 body {
     color: rgb(var(--foreground-rgb));
