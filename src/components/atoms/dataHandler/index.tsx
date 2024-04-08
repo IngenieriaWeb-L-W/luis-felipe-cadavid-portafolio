@@ -1,3 +1,6 @@
+'use client'
+import React from 'react'
+
 interface subData {
     [key: string]: string | number | boolean
 }
@@ -10,11 +13,11 @@ interface dataProps {
 export function DataHandler({ data, textFormat }: dataProps) {
     function getColor(percent: number): string {
         if (percent >= 80) {
-            return 'bg-green-500'
+            return 'color-gradient-status-1'
         } else if (percent >= 60) {
-            return 'bg-yellow-500'
+            return 'color-gradient-status-2'
         } else {
-            return 'bg-red-500'
+            return 'color-gradient-status-3'
         }
     }
 
@@ -37,11 +40,13 @@ export function DataHandler({ data, textFormat }: dataProps) {
                                             <div className='flex grow items-center'>
                                                 <div className='mr-2 h-4 grow rounded-full bg-gray-200'>
                                                     <div
-                                                        className={`h-full rounded-full ${getColor(
+                                                        className={`bar-progress h-full rounded-full ${getColor(
                                                             parseInt(subValue),
                                                         )}`}
                                                         style={{
                                                             width: subValue,
+                                                            backgroundColor:
+                                                                'transparent',
                                                         }}
                                                     ></div>
                                                 </div>
@@ -58,11 +63,12 @@ export function DataHandler({ data, textFormat }: dataProps) {
                         <div className='flex items-center'>
                             <div className='mr-2 h-4 grow rounded-full bg-gray-200'>
                                 <div
-                                    className={`h-full rounded-full ${getColor(
+                                    className={`bar-progress h-full rounded-full ${getColor(
                                         parseInt(subData),
                                     )}`}
                                     style={{
                                         width: subData,
+                                        backgroundColor: 'transparent',
                                     }}
                                 ></div>
                             </div>
